@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxCalcualtor</title>
+    <link rel="stylesheet" href="../Css/main.css">
+    <script type="text/javascript" src="../Java script/main.js"></script>
+</head>
+<body>
+
+    <!-- Html Form with six inputs -->
+    <form name="myform" method="Post" onsubmit="return formSubmit();"  action="" >
+
+        <h1>Tax Calculator</h1>
+
+        <label>Name*:</label>
+        <input id="name" type="text" name="name" required><br/>
+    
+        <label>Phone*:</label>
+        <input id="phone" placeholder="123-123-1234" type="phone" name="phone" required><br/>
+
+        <label>Email*:</label>
+        <input id="email" placeholder="email@domain.com" type="email" name="email" required><br/>
+
+        <label>Employment Income*:</label>
+        <input id="employmentIncome" type="text" name="employementIncome" required><br/>
+
+        <label>Other Income:</label>
+        <input id="otherIncome" type="text" name="otherIncome"><br/>
+
+        <label>Income Taxes Paid*:</label>
+        <input id="taxPaid" type="text" name="taxPaid"><br/>
+
+        <br>
+        <!-- Calculate button for calculate all income and taxes to paid -->
+        <input type="submit" value="Calculate">
+
+        <!-- To print error messages -->
+        <p id="errors"></p>
+
+    </form>
+
+    <!-- To print outPut -->
+    <div class="formData">
+        <p id="formResult">OutPut</p>
+      </div>
+</body>
+</html>
